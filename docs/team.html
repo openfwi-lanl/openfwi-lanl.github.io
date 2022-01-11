@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165257358-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165257358-1');
+</script> -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Chengyuan Deng">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/favicon.ico?1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <title>Open FWI | A collection of benchmark datasets for Seismic FWI with Machine Learning</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <span style="font-family: 'Ma Shan Zheng', cursive;">OpenFWI</span> 
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                <li ><a href="../index.html">Home</a></li>
+                <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Datasets <span class="caret"></span>
+                </a>
+                    <ul class="dropdown-menu">
+<!--                       <li><a href="#">Overview</a></li>
+                      <li class="divider"></li> -->
+                      <li><a href="data.html">FlatVEL, CurvedVel</a></li>
+                      <li class="divider"></li>  
+                      <li><a href="data.html#">FlatFault, CurvedFault</a></li>
+                      <li class="divider"></li>
+                      <li><a href="data.html#">Style-transfer</a></li>
+                      <li class="divider"></li>
+                      <li><a href="data.html#">Kimberlina-CO2 Leakage</a></li>
+                      <li class="divider"></li>
+                      <li><a href="data.html#">3D Kimberlina</a></li>
+                    </ul>
+                </li>           
+                <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Task <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <!-- <li><a  target="_blank" href="https://arxiv.org/abs/2111.02926">OpenFWI</a></li>
+                      <li class="divider"></li>
+                      <li><a  target="_blank" href="https://arxiv.org/pdf/1811.07875.pdf">InversionNet</a></li>
+                      <li class="divider"></li>
+                      <li><a  target="_blank" href="https://arxiv.org/pdf/2103.14158.pdf">InversionNet3D</a></li>
+                      <li class="divider"></li>
+                      <li><a  target="_blank" href="https://arxiv.org/pdf/2103.04007.pdf">Multi-scale</a></li>
+                      <li class="divider"></li>
+                      <li><a  target="_blank" href="https://arxiv.org/pdf/2110.07584.pdf">UPFWI</a></li> -->
+                      <li><a  target="#" href="task.html">Supervised Learning</a></li>
+                      <li class="divider"></li>
+                      <li><a  target="#" href="task.html">Unsupervised Learning</a></li>
+                    </ul>
+                </li>
+                <li ><a href="pub.html">Publications</a></li>
+                <li ><a href="#">Team</a></li>
+                <li ><a href="update.html">Updates</a></li>
+
+            </div>
+        </div>
+    </div>
+</nav>
+   
+<div class="page-content">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>OpenFWI Team at LANL</h2>
+            <h7><strong>The OpenFWI team can be reached at: <a href="mailto:ogb@cs.stanford.edu">openfwi@gmail.com</a> </strong></h7>
+            <hr />
+            <table style="background-color:#FDFEFE; border:none;">
+            <tr>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="../assets/img/cyd.JPG" class="img-responsive" />
+                <strong><a href="#">Chengyuan Deng</a></strong> <br /> Rutgers University
+                </div>
+              </td>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="/assets/img/portrait/matthias.png" class="img-responsive" />
+                <strong><a href="#">Yinan Feng</a></strong> <br /> Los Alamos National Lab
+                </div>
+              </td>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="../assets/img/shihang.jpg" class="img-responsive" />
+                <strong><a href="#">Shihang Feng</a></strong> <br /> Los Alamos National Lab
+                </div>
+              </td>
+              <td style="text-center">
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="/assets/img/portrait/yuxiao.png" class="img-responsive" />
+                <strong><a href="#">Peng Jin</a></strong> <br /> Pennsylvania State University
+                </div>
+              </td>
+            </tr> 
+            <tr>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="/assets/img/portrait/hongyu.png" class="img-responsive" />
+                <strong><a href="#">Xitong Zhang</a></strong> <br /> Michigan State University
+                </div>
+              </td>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="/assets/img/portrait/bowen.png" class="img-responsive" />
+                <strong><a href="#">Qili Zeng</a></strong> <br /> Qualcomm
+                </div>
+              </td>
+              <td>
+              <div style="margin: 0 auto; width: 180px; text-align: center">
+                <img src="../assets/img/ylin.jpg" class="img-responsive" />
+                <strong><a href="https://sites.google.com/site/youzuolin044/">Youzuo Lin</a></strong> <br /> Los Alamos National Lab
+                </div>
+              </td>
+              
+            </tr> 
+          </table>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="footer">
+  <div class="container">
+      <p class="text-center">
+          Open FWI 2021 
+      </p>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../assets/js/bootstrap.min.js "></script>
+<script src="../assets/js/typeahead.bundle.min.js "></script>
+
+<script src="../assets/js/main.js "></script>
+
+</body>
+
+</html>
