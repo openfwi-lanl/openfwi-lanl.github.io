@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165257358-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-165257358-1');
-</script> -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,38 +46,25 @@
                     Datasets <span class="caret"></span>
                 </a>
                     <ul class="dropdown-menu">
-<!--                       <li><a href="#">Overview</a></li>
-                      <li class="divider"></li> -->
-                      <li><a href="data.html">FlatVEL, CurvedVel</a></li>
+                      <li><a href="data.html">Vel Family</a></li>
                       <li class="divider"></li>  
-                      <li><a href="data.html">FlatFault, CurvedFault</a></li>
+                      <li><a href="data.html">Fault Family</a></li>
                       <li class="divider"></li>
-                      <li><a href="data.html">Style-transfer</a></li>
+                      <li><a href="data.html">Style Family</a></li>
                       <li class="divider"></li>
-                      <li><a href="data.html">Kimberlina-CO2 Leakage</a></li>
-                      <li class="divider"></li>
-                      <li><a href="data.html">3D Kimberlina</a></li>
+                      <li><a href="data.html">Kimberlina Family</a></li>
                     </ul>
                 </li>           
-                <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    Task <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <!-- <li><a  target="_blank" href="https://arxiv.org/abs/2111.02926">OpenFWI</a></li>
-                      <li class="divider"></li>
-                      <li><a  target="_blank" href="https://arxiv.org/pdf/1811.07875.pdf">InversionNet</a></li>
-                      <li class="divider"></li>
-                      <li><a  target="_blank" href="https://arxiv.org/pdf/2103.14158.pdf">InversionNet3D</a></li>
-                      <li class="divider"></li>
-                      <li><a  target="_blank" href="https://arxiv.org/pdf/2103.04007.pdf">Multi-scale</a></li>
-                      <li class="divider"></li>
-                      <li><a  target="_blank" href="https://arxiv.org/pdf/2110.07584.pdf">UPFWI</a></li> -->
-                      <li><a href="task.html">Supervised Learning</a></li>
-                      <li class="divider"></li>
-                      <li><a href="task.html">Unsupervised Learning</a></li>
-                    </ul>
-                </li>
-                <li ><a href="#">Publications</a></li>
-                <li ><a href="team.html">Team</a></li>
+                
+                <li ><a href="benchmark.html">Benchmarks</a></li>           
+                <li ><a  target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                  </ul>
                 <li ><a href="update.html">Updates</a></li>
 
             </div>
@@ -103,37 +80,35 @@
           	<div id="markdown-content-container">	
             <h2>Papers for OpenFWI Datasets</h2>
             <hr />
+            <span>Note: The datasets used in previous papers may be different, we unify the parameters (data shape, forward modelling, training, etc.) of official OpenFWI datasets.</span>
             <ul>
             	<li>
             		<div>
-            			<h6><a href="https://arxiv.org/abs/2111.02926">OpenFWI: Benchmark Seismic Datasets for Machine Learning-Based Full Waveform Inversion</a></h6>
+            			<h6><a href="https://arxiv.org/abs/2111.02926", target="_blank">OpenFWI: Large-scale Multi-structural Benchmark Datasets for Full Waveform Inversion. </a></h6>
             		</div>
-            		<span>Chengyuan Deng, Yinan Feng, Shihang Feng, Peng Jin, Xitong Zhang, Qili Zeng, Youzuo Lin</span>
-            			
-            		
+            		<span>Chengyuan Deng, Shihang Feng, Hanchen Wang,  Xitong Zhang, Peng Jin, Yinan Feng, Qili Zeng, Yinpeng Chen, Youzuo Lin</span>
             	</li>
             	<li>
-            		<div><h6><a href="https://arxiv.org/abs/1811.07875">InversionNet: A Real-Time and Accurate Full Waveform Inversion with CNNs and continuous CRFs</a></h6></div>
+            		<div><h6><a href="https://arxiv.org/abs/1811.07875", target="_blank">InversionNet: A Real-Time and Accurate Full Waveform Inversion with CNNs and continuous CRFs</a></h6></div>
             		<span>Yue Wu, Youzuo Lin</span> 
             	</li>
             	<li>
-            		<div><h6><a href="https://arxiv.org/abs/2103.14158">InversionNet3D: Efficient and Scalable Learning for 3D Full Waveform Inversion</a></h6></div>
+            		<div><h6><a href="https://arxiv.org/abs/2103.14158", target="_blank">InversionNet3D: Efficient and Scalable Learning for 3D Full Waveform Inversion</a></h6></div>
             		<span>Qili Zeng, Shihang Feng, Brendt Wohlberg, Youzuo Lin</span> 
             	</li>
             	<li>
-            		<div><h6><a href="https://arxiv.org/abs/2103.04007">Multiscale Data-driven Seismic Full-waveform Inversion with Field Data Study</a></h6></div>
+            		<div><h6><a href="https://arxiv.org/abs/2103.04007", target="_blank">Multiscale Data-driven Seismic Full-waveform Inversion with Field Data Study</a></h6></div>
             		<span>Shihang Feng, Youzuo Lin, Brendt Wohlberg</span> 
             	</li>
             	<li>
-            		<div><h6><a href="https://arxiv.org/abs/2110.07584">Unsupervised Learning of Full-Waveform Inversion: Connecting CNN and Partial Differential Equation in a Loop</a></h6></div>
+            		<div><h6><a href="https://arxiv.org/abs/2110.07584", target="_blank">Unsupervised Learning of Full-Waveform Inversion: Connecting CNN and Partial Differential Equation in a Loop</a></h6></div>
             		<span>Peng Jin, Xitong Zhang, Yinpeng Chen, Sharon Xiaolei Huang, Zicheng Liu, Youzuo Lin</span> 
             	</li>
-            </ul>
-             
-
-            
-
-			
+              <li>
+                <div><h6><a href="https://arxiv.org/abs/2204.13731", target="_blank">An Intriguing Property of Geophysics Inversion</a></h6></div>
+                <span>Yinan Feng, Yinpeng Chen, Shihang Feng, Peng Jin, Zicheng Liu, Youzuo Lin</span>
+              </li>
+            </ul>			
 			</div>
           </div>
         </div>

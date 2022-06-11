@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165257358-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-165257358-1');
-</script> -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Chengyuan Deng, Qili Zeng, Shihang Feng, Youzuo Lin">
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
@@ -57,21 +46,20 @@
                     <ul class="dropdown-menu">
 <!--                       <li><a href="./docs/data.html">Overview</a></li>
                       <li class="divider"></li> -->
-                      <li><a href="docs/data.html">FlatVEL, CurvedVel</a></li>
+                      <li><a href="docs/data.html#vel">Vel Family</a></li>
                       <li class="divider"></li>  
-                      <li><a href="docs/data.html">FlatFault, CurvedFault</a></li>
+                      <li><a href="docs/data.html#fault">Fault Family</a></li>
                       <li class="divider"></li>
-                      <li><a href="docs/data.html">Style-transfer</a></li>
+                      <li><a href="docs/data.html#style">Style Family</a></li>
                       <li class="divider"></li>
-                      <li><a href="docs/data.html">Kimberlina-CO2 Leakage</a></li>
-                      <li class="divider"></li>
-                      <li><a href="docs/data.html">3D Kimberlina</a></li>
+                      <li><a href="docs/data.html#kimbelrina">Kimberlina Family</a></li>
                     </ul>
-                </li>           
-                <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                </li>
+                <li ><a href="docs/benchmark.html">Benchmarks</a></li>           
+  <!--               <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Task <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <!-- <li><a  target="_blank" href="https://arxiv.org/abs/2111.02926">OpenFWI</a></li>
+                      <li><a  target="_blank" href="https://arxiv.org/abs/2111.02926">OpenFWI</a></li>
                       <li class="divider"></li>
                       <li><a  target="_blank" href="https://arxiv.org/pdf/1811.07875.pdf">InversionNet</a></li>
                       <li class="divider"></li>
@@ -79,14 +67,20 @@
                       <li class="divider"></li>
                       <li><a  target="_blank" href="https://arxiv.org/pdf/2103.04007.pdf">Multi-scale</a></li>
                       <li class="divider"></li>
-                      <li><a  target="_blank" href="https://arxiv.org/pdf/2110.07584.pdf">UPFWI</a></li> -->
+                      <li><a  target="_blank" href="https://arxiv.org/pdf/2110.07584.pdf">UPFWI</a></li>
                       <li><a href="docs/task.html">Supervised Learning</a></li>
                       <li class="divider"></li>
                       <li><a href="docs/task.html">Unsupervised Learning</a></li>
                     </ul>
-                </li>
-                <li ><a href="docs/pub.html">Publications</a></li>
-                <li ><a href="docs/team.html">Team</a></li>
+                </li> -->
+                <li ><a  target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                	Resources <span class="caret"></span></a>
+                	<ul class="dropdown-menu">
+                		<li><a href="#">Github</a></li>
+                		<li><a href="#">Tutorial</a></li>
+                		<li><a href="docs/pub.html">publications</a></li>
+                		<li><a href="docs/team.html">Team</a></li>
+                	</ul>
                 <li ><a href="docs/update.html">Updates</a></li>
             </div>
         </div>
@@ -107,30 +101,42 @@
 			        <div class="col-md-7">
 			            <p class="lead", style="text-align: justify;">
 			                <font size="5">
-			                OpenFWI is a collection of large-scale, realistic, challenging, and diverse benchmark datasets for machine learning driven seismic FWI. 
-			                Seven datasets with different model complexity can be downloaded from this site. We also provide baseline experimental results on OpenFWI with InversionNet. <br>
+			                OpenFWI is a collection of large-scale, multi-structural benchmark datasets for machine learning driven seismic FWI. 
+			                We release twelve datasets synthesized from different priors, including one 3D dataset. We also provide baseline experimental results with four deep learning methods: InversionNet, VelocityGAN, UPFWI and InversionNet3D. <br>
 			                OpenFWI is the first open-source platform to facilitate data-driven FWI research. It will be actively developed and the datasets are expected to evolve. To keep informed of major updates, <b>subscribe to our google group <a href="https://groups.google.com/g/openfwi">here</a></b>. 
 			                </font>
 			            </p>
 			        </div>
 			        <div class="col-md-5 text-center">
-			            <img src="./assets/img/data.png" alt="Seismic Forward Modelling and FWI" class="img-responsive">
+			            <img src="./assets/img/gallery.jpg" alt="Seismic Forward Modelling and FWI" class="img-responsive">
+			            
+			        </div>
 			    </div>
 			</div>
     		<hr>
-
-		    <h3 id="citing-ogb">Citation</h3>
-
-		    <p>If you use OpenFWI Datasets in your work, please cite <a href="https://arxiv.org/abs/2111.02926">our paper</a> (Bibtex below).</p>
-
-		    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{deng2021openfwi,
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h3>Citation</h3>
+    					<p>If you use OpenFWI Datasets in your work, please cite <a href="https://arxiv.org/abs/2111.02926">our paper</a> (Bibtex below).</p>
+    					<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{deng2021openfwi,
   title={OpenFWI: Benchmark Seismic Datasets for Machine Learning-Based Full Waveform Inversion},
   author={Deng, Chengyuan and Feng, Yinan and Feng, Shihang and Jin, Peng and Zhang, Xitong and Zeng, Qili and Lin, Youzuo},
   journal={arXiv preprint arXiv:2111.02926},
   year={2021}
 }
-		    </code></pre></div></div>
+		    			</code></pre></div></div>
+    				</div>
+    			</div>
+    		</div>
+    			
 
+		    
+
+		    
+
+    		</div>
+		    
 	    </div>
 	</div>
 
@@ -138,7 +144,7 @@
     <div class="container">
 
         <p class="text-center">
-            Open FWI 2021 
+            Open FWI 2022 
         </p>
         
         <!-- <p class="text-muted">Place sticky footer content here.</p> -->
