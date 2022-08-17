@@ -35,14 +35,14 @@
         var editMsg = "📝 Go to GitHub";
 
         window.$docsify = {
-            name: "DocsifyJS Template", // TODO: Update.
+            name: "OpenFWI Documentation", // TODO: Update.
             repo: repoUrl,
             
             auto2top: true,
-            coverpage: true,
+            coverpage: false,
             loadSidebar: false,
             subMaxLevel: 2,
-            themeColor: "#3170a7", // TODO: Set your own color.
+            // themeColor: "#3170a7"
              plugins: [
                 EditOnGithubPlugin.create(repoUrl, null, editMsg)
             ],
