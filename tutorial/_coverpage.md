@@ -2,7 +2,7 @@
   Welcome to OpenFWI Documentation  <!-- TODO: Update title -->
 </h1>
 
-<!-- [![GitHub tags](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/)  --><!-- TODO: Update username and repo name -->
+<!-- [![GitHub tags](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/)  -->
 
 >  The first open-source dataset and benchmarking platform for data-driven FWI
 
@@ -21,4 +21,4 @@
 [Get Started](#OpenFWI-Documentation) <!-- TODO: Use ID of your homepage heading -->
 
 <!-- TODO: Set your background color or image. -->
-![color](#b3d9f8)
+<!-- ![color](#b3d9f8) -->
