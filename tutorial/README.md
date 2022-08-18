@@ -32,7 +32,7 @@ velocity_map = np.load('model1.npy')
 print(velocity_map.shape) #(500,1,70,70)
 ```
 
-For Kimberlina-$$CO_2$$, the difference is each file only contains one sample.
+For Kimberlina-$CO_2$, the difference is each file only contains one sample, which has shape of (401,141) for velocity maps and (9,1251,101) for seismic data.
 
 ### Visualization
 
@@ -55,7 +55,7 @@ Dataset_directory/data2.npy
 Dataset_directory/data48.npy
 ```
 
-**To save time, you can download all the text files from the `splitting_files` folder at our [Github repo](https://github.com/lanl/openfwi) and change to your own directory.**
+**To save time, you can download all the text files from the `split_files` folder at our [Github repo](https://github.com/lanl/openfwi) and change to your own directory.**
 
 ## Fast Training and Testing
 Now we are ready to train a neural network on OpenFWI datasets. For 2D datasets with InversionNet and VelocityGAN, training with a single GPU is sufficient. For Kimberlina-3D dataset, multi-GPU is necessary considering the computation cost.
