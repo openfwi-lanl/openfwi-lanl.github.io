@@ -408,6 +408,7 @@
                 <tr>
                   <th style="text-align: center">Dataset</th>
                   <th style="text-align: center">Loss Function</th>
+                  <th style="text-align: center">Selected Channels</th>
                   <th style="text-align: center">MAE</th>
                   <th style="text-align: center">RMSE</th>
                   <th style="text-align: center">SSIM</th>
@@ -416,12 +417,34 @@
               <tbody>
                 <tr>
                   <td style="text-align: center"> 3D Kimberlina-V1 </td>
-                  <td style="text-align: center"> \(\ell_1\)</td>
-                  <td style="text-align: center">\( 10.41 \)</td>
-                  <td style="text-align: center">\( 27.57 \)</td>
-                  <td style="text-align: center">\( 0.9811 \)</td>
+                  <td style="text-align: center"> \(\ell_1 \backslash \ell_2\)</td>
+                  <td style="text-align: center"> \([1,2,14,15,16,20,23,24])</td>
+                  <td style="text-align: center">\( 0.0111 \backslash 0.0156 \)</td>
+                  <td style="text-align: center">\( 0.0295 \backslash 0.0311\)</td>
+                  <td style="text-align: center">\( 0.9773 \backslash 0.9438\)</td>
                 </tr>
               </tbody>
+              <tbody>
+                <tr>
+                  <td style="text-align: center"> 3D Kimberlina-V1 </td>
+                  <td style="text-align: center"> \(\ell_1 \backslash \ell_2\)</td>
+                  <td style="text-align: center"> \([6,7,8,11,13,16,17,18])</td>
+                  <td style="text-align: center">\( 0.0108 \backslash 0.0153 \)</td>
+                  <td style="text-align: center">\( 0.0285 \backslash 0.0306\)</td>
+                  <td style="text-align: center">\( 0.9776 \backslash 0.9420\)</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td style="text-align: center"> 3D Kimberlina-V1 </td>
+                  <td style="text-align: center"> \(\ell_1 \backslash \ell_2\)</td>
+                  <td style="text-align: center"> \([0,2,4,10,14,20,22,24])</td>
+                  <td style="text-align: center">\( 0.0161 \backslash 0.0111 \)</td>
+                  <td style="text-align: center">\( 0.0316 \backslash 0.0290\)</td>
+                  <td style="text-align: center">\( 0.9356 \backslash 0.9770\)</td>
+                </tr>
+              </tbody>
+
             </table>
 
           </div>
