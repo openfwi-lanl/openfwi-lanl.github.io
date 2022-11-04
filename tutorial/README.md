@@ -3,6 +3,8 @@
 
 [![Made with latest Docsify](https://img.shields.io/npm/v/docsify/latest?label=docsify)](https://docsify.js.org/)
 
+Google Colab Tutorial: https://colab.research.google.com/drive/17s5JmVs9ABl8MpmFlhWMSslj9_d5Atfx#scrollTo=H8FquS95NtVn
+
 ## About
 
 OpenFWI(v1.0) datasets include eleven _2D_ datasets and one _3D_ dataset. 
