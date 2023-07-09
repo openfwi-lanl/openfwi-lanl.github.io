@@ -11,6 +11,8 @@ OpenFWI(v1.0) datasets include eleven _2D_ datasets and one _3D_ dataset.
 
 OpenFWI provides benchmarks on these datasets with four deep learning methods: _InversionNet_, _VelocityGAN_, _UPFWI_ for 2D and _InversionNet_ for 3D. Currently, _InversionNet_ and _VelocityGAN_ are fully suported on 11 2D datasets. The rest will be released upon approval by Los Alamos National Lab.
 
+## Google Colab Tutorial
+
 This tutorial is designed for beginners on data-driven FWI, knowledge on [pytorch](https://pytorch.org) is preferred but not necessary.
 
 ## Features
